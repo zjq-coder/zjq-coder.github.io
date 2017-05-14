@@ -5,17 +5,17 @@
   
   <title>前端学习分享 | zjq-blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端学习分享1.谈谈Cookie的弊端 cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。第一：每个特定的域名下最多生成20个cookie1.IE6或更低版本最多20个cookie2.IE7和之后的版本最后可以有50个cookie。3.Firefox最多50个cookie4.chrome和Safari没有做硬性限制IE和Opera 会清理近期最少使用的c">
+  <meta name="description" content="前端学习分享1.谈谈Cookie的弊端   cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。第一：每个特定的域名下最多生成20个cookie1.IE6或更低版本最多20个cookie2.IE7和之后的版本最后可以有50个cookie。3.Firefox最多50个cookie4.chrome和Safari没有做硬性限制IE和Opera 会清理近期最少使用">
 <meta name="keywords" content="黑魔法,奇淫技巧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端学习分享">
 <meta property="og:url" content="http://yoursite.com/2017/05/14/前端分享/index.html">
 <meta property="og:site_name" content="zjq-blog">
-<meta property="og:description" content="前端学习分享1.谈谈Cookie的弊端 cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。第一：每个特定的域名下最多生成20个cookie1.IE6或更低版本最多20个cookie2.IE7和之后的版本最后可以有50个cookie。3.Firefox最多50个cookie4.chrome和Safari没有做硬性限制IE和Opera 会清理近期最少使用的c">
-<meta property="og:updated_time" content="2017-05-14T04:46:55.733Z">
+<meta property="og:description" content="前端学习分享1.谈谈Cookie的弊端   cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。第一：每个特定的域名下最多生成20个cookie1.IE6或更低版本最多20个cookie2.IE7和之后的版本最后可以有50个cookie。3.Firefox最多50个cookie4.chrome和Safari没有做硬性限制IE和Opera 会清理近期最少使用">
+<meta property="og:updated_time" content="2017-05-14T04:52:09.517Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端学习分享">
-<meta name="twitter:description" content="前端学习分享1.谈谈Cookie的弊端 cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。第一：每个特定的域名下最多生成20个cookie1.IE6或更低版本最多20个cookie2.IE7和之后的版本最后可以有50个cookie。3.Firefox最多50个cookie4.chrome和Safari没有做硬性限制IE和Opera 会清理近期最少使用的c">
+<meta name="twitter:description" content="前端学习分享1.谈谈Cookie的弊端   cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。第一：每个特定的域名下最多生成20个cookie1.IE6或更低版本最多20个cookie2.IE7和之后的版本最后可以有50个cookie。3.Firefox最多50个cookie4.chrome和Safari没有做硬性限制IE和Opera 会清理近期最少使用">
   
     <link rel="alternative" href="/atom.xml" title="zjq-blog" type="application/atom+xml">
   
@@ -268,10 +268,10 @@
       
           
         <h4 id="前端学习分享"><a href="#前端学习分享" class="headerlink" title="前端学习分享"></a>前端学习分享</h4><p>1.谈谈Cookie的弊端</p>
-<p>cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。<br>第一：每个特定的域名下最多生成20个cookie<br>1.IE6或更低版本最多20个cookie<br>2.IE7和之后的版本最后可以有50个cookie。<br>3.Firefox最多50个cookie<br>4.chrome和Safari没有做硬性限制<br>IE和Opera 会清理近期最少使用的cookie，Firefox会随机清理cookie。</p>
-<a id="more"></a>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=439915614&auto=1&height=66"></iframe>
 
+<p>cookie虽然在持久保存客户端数据提供了方便，分担了服务器存储的负担，但还是有很多局限性的。<br>第一：每个特定的域名下最多生成20个cookie<br>1.IE6或更低版本最多20个cookie<br>2.IE7和之后的版本最后可以有50个cookie。<br>3.Firefox最多50个cookie<br>4.chrome和Safari没有做硬性限制<br>IE和Opera 会清理近期最少使用的cookie，Firefox会随机清理cookie。</p>
+<a id="more"></a>
 <p>cookie的最大大约为4096字节，为了兼容性，一般不能超过4095字节。<br>IE 提供了一种存储可以持久化用户数据，叫做uerData，从IE5.0就开始支持。每个数据最多128K，每个域名下最多1M。这个持久化数据放在缓存中，如果缓存没有清理，那么会一直存在。<br>优点：极高的扩展性和可用性<br>1.通过良好的编程，控制保存在cookie中的session对象的大小。<br>2.通过加密和安全传输技术（SSL），减少cookie被破解的可能性。<br>3.只在cookie中存放不敏感数据，即使被盗也不会有重大损失。<br>4.控制cookie的生命期，使之不会永远有效。偷盗者很可能拿到一个过期的cookie。</p>
 <p>缺点：<br>1.<code>Cookie</code>数量和长度的限制。每个domain最多只能有20条cookie，每个cookie长度不能超过4KB，否则会被截掉。</p>
 <p>2.安全性问题。如果cookie被人拦截了，那人就可以取得所有的session信息。即使加密也与事无补，因为拦截者并不需要知道cookie的意义，他只要原样转发cookie就可以达到目的了。</p>
@@ -535,7 +535,7 @@ JS 分文件夹存放 命名以该JS功能为准的英文翻译。
         <p><span>本文标题:</span><a href="/2017/05/14/前端分享/">前端学习分享</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 zjq-blog 的个人博客">zjq-blog</a></p>
         <p><span>发布时间:</span>2017年05月14日 - 09时18分</p>
-        <p><span>最后更新:</span>2017年05月14日 - 12时46分</p>
+        <p><span>最后更新:</span>2017年05月14日 - 12时52分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/05/14/前端分享/" title="前端学习分享">http://yoursite.com/2017/05/14/前端分享/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/05/14/前端分享/　　作者: zjq-blog" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
