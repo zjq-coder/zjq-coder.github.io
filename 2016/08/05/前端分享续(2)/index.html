@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>github搭建博客优点 | zjq-blog</title>
+  <title>前端学习分享 | zjq-blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用github pages服务搭建博客的好处有：   全是静态文件，访问速度快；">
-<meta name="keywords" content="黑魔法,奇淫技巧">
+  <meta name="description" content="前端学习分享续(2)6.减少http请求（合并文件，合并图片）。 你都使用哪些工具来测试代码的性能？  Profiler, JSPerf（http: 什么是 FOUC（无样式内容闪烁）？你如何来避免 FOUC？   FOUC - Flash Of Unstyled Content 文档样式闪烁  &amp;lt;styletype=&amp;quot;text/css&amp;quot;media=&amp;quot;all&amp;q">
+<meta name="keywords" content="http,jsonp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="github搭建博客优点">
-<meta property="og:url" content="http://yoursite.com/2016/07/22/my-first-blog/index.html">
+<meta property="og:title" content="前端学习分享">
+<meta property="og:url" content="http://yoursite.com/2016/08/05/前端分享续(2)/index.html">
 <meta property="og:site_name" content="zjq-blog">
-<meta property="og:description" content="使用github pages服务搭建博客的好处有：   全是静态文件，访问速度快；">
-<meta property="og:updated_time" content="2017-05-14T10:02:38.994Z">
+<meta property="og:description" content="前端学习分享续(2)6.减少http请求（合并文件，合并图片）。 你都使用哪些工具来测试代码的性能？  Profiler, JSPerf（http: 什么是 FOUC（无样式内容闪烁）？你如何来避免 FOUC？   FOUC - Flash Of Unstyled Content 文档样式闪烁  &amp;lt;styletype=&amp;quot;text/css&amp;quot;media=&amp;quot;all&amp;q">
+<meta property="og:updated_time" content="2017-05-30T01:47:52.928Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="github搭建博客优点">
-<meta name="twitter:description" content="使用github pages服务搭建博客的好处有：   全是静态文件，访问速度快；">
+<meta name="twitter:title" content="前端学习分享">
+<meta name="twitter:description" content="前端学习分享续(2)6.减少http请求（合并文件，合并图片）。 你都使用哪些工具来测试代码的性能？  Profiler, JSPerf（http: 什么是 FOUC（无样式内容闪烁）？你如何来避免 FOUC？   FOUC - Flash Of Unstyled Content 文档样式闪烁  &amp;lt;styletype=&amp;quot;text/css&amp;quot;media=&amp;quot;all&amp;q">
   
     <link rel="alternative" href="/atom.xml" title="zjq-blog" type="application/atom+xml">
   
@@ -233,11 +233,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-前端分享续(2)" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/22/my-first-blog/" class="article-date">
-      <time datetime="2016-07-22T07:08:32.000Z" itemprop="datePublished">2016-07-22</time>
+      <a href="/2016/08/05/前端分享续(2)/" class="article-date">
+      <time datetime="2016-08-04T16:00:00.000Z" itemprop="datePublished">2016-08-05</time>
 </a>
     </div>
   
@@ -250,7 +250,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      github搭建博客优点
+      前端学习分享
     </h1>
   
 
@@ -261,7 +261,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/奇淫技巧/">奇淫技巧</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/黑魔法/">黑魔法</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/">http</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jsonp/">jsonp</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -271,19 +271,260 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>使用github pages服务搭建博客的好处有：</p>
-<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="50" width="300" height="86" src="//music.163.com/outchain/player?type=2&id=27676089&auto=1&height=66"></iframe></p>
-<ol>
-<li>全是静态文件，访问速度快；<a id="more"></a></li>
-<li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li>
-<li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li>
-</ol>
-<ol>
-<li>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</li>
-<li>博客内容可以轻松打包、转移、发布到其它平台；</li>
-<li>等等；</li>
-</ol>
+        <h4 id="前端学习分享续-2"><a href="#前端学习分享续-2" class="headerlink" title="前端学习分享续(2)"></a>前端学习分享续(2)</h4><pre><code>6.减少http请求（合并文件，合并图片）。
+你都使用哪些工具来测试代码的性能？
 
+Profiler, JSPerf（http:
+什么是 FOUC（无样式内容闪烁）？你如何来避免 FOUC？
+
+ FOUC - Flash Of Unstyled Content 文档样式闪烁
+ &lt;styletype=&quot;text/css&quot;media=&quot;all&quot;&gt;@import&quot;../fouc.css&quot;;&lt;/style&gt; 
+而引用CSS文件的@import就是造成这个问题的罪魁祸首。IE会先加载整个HTML文档的DOM，然后再去导入外部的CSS文件，因此，在页面DOM加载完成到CSS导入完成中间会有一段时间页面上的内容是没有样式的，这段时间的长短跟网速，电脑速度都有关系。
+ 解决方法简单的出奇，只要在&lt;head&gt;之间加入一个&lt;link&gt;或者&lt;script&gt;元素就可以了。
+null和undefined的区别？
+
+null是一个表示&quot;无&quot;的对象，转为数值时为0；undefined是一个表示&quot;无&quot;的原始值，转为数值时为NaN。
+当声明的变量还未被初始化时，变量的默认值为undefined。
+null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。
+undefined表示&quot;缺少值&quot;，就是此处应该有一个值，但是还没有定义。典型用法是：
+（1）变量被声明了，但没有赋值时，就等于undefined。
+
+（2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。
+
+（3）对象没有赋值的属性，该属性的值为undefined。
+
+（4）函数没有返回值时，默认返回undefined。
+null表示&quot;没有对象&quot;，即该处不应该有值。典型用法是：
+（1） 作为函数的参数，表示该函数的参数不是对象。
+
+（2） 作为对象原型链的终点。
+new操作符具体干了什么呢?
+
+1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
+   2、属性和方法被加入到 this 引用的对象中。
+   3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。
+
+var obj  = {};
+obj.**proto** = Base.prototype;
+Base.call(obj); 
+JSON 的了解？
+
+JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式。
+它是基于JavaScript的一个子集。数据格式简单, 易于读写, 占用带宽小
+{&apos;age&apos;:&apos;12&apos;, &apos;name&apos;:&apos;back&apos;}
+js延迟加载的方式有哪些？
+
+defer和async、动态创建DOM方式（创建script，插入到DOM中，加载完毕后callBack）、按需异步载入js
+如何解决跨域问题?
+
+&lt;pre&gt;`jsonp、 iframe、&lt;span class=&quot;hljs-built_in&quot;&gt;window&lt;/span&gt;.name、&lt;span class=&quot;hljs-built_in&quot;&gt;window&lt;/span&gt;.postMessage、服务器上设置代理页面
+`&lt;/pre&gt;
+
+jsonp的原理是动态插入script标签
+具体参见：详解js跨域问题
+documen.write和 innerHTML的区别
+
+document.write只能重绘整个页面
+
+innerHTML可以重绘页面的一部分
+.call() 和 .apply() 的区别和作用？
+
+作用：动态改变某个类的某个方法的运行环境。
+区别参见：JavaScript学习总结（四）function函数部分
+哪些操作会造成内存泄漏？
+
+内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。
+垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。
+
+setTimeout 的第一个参数使用字符串而非函数的话，会引发内存泄漏。
+闭包、控制台日志、循环（在两个对象彼此引用且彼此保留时，就会产生一个循环）
+详见：详解js变量、作用域及内存
+JavaScript中的作用域与变量声明提升？
+
+详见：详解JavaScript函数模式
+如何判断当前脚本运行在浏览器还是node环境中？
+
+通过判断Global对象是否为window，如果不为window，当前脚本没有运行在浏览器中
+其他问题？
+
+你遇到过比较难的技术问题是？你是如何解决的？常使用的库有哪些？常用的前端开发工具？开发过什么应用或组件？页面重构怎么操作？列举IE 与其他浏览器不一样的特性？99%的网站都需要被重构是那本书上写的？什么叫优雅降级和渐进增强？
+详见：css学习归纳总结（一）
+WEB应用从服务器主动推送Data到客户端有那些方式？对Node的优点和缺点提出了自己的看法？
+*（优点）因为Node是基于事件驱动和无阻塞的，所以非常适合处理并发请求，
+  因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。
+  此外，与Node代理服务器交互的客户端代码是由javascript语言编写的，
+  因此客户端和服务器端都用同一种语言编写，这是非常美妙的事情。
+
+*（缺点）Node是一个相对新的开源项目，所以不太稳定，它总是一直在变，
+  而且缺少足够多的第三方库支持。看起来，就像是Ruby/Rails当年的样子。
+除了前端以外还了解什么其它技术么？你最最厉害的技能是什么？你常用的开发工具是什么，为什么？数组去重？对前端界面工程师这个职位是怎么样理解的？它的前景会怎么样？
+前端是最贴近用户的程序员，比后端、数据库、产品经理、运营、安全都近。
+    1、实现界面交互
+    2、提升用户体验
+    3、有了Node.js，前端可以实现服务端的一些事情
+
+前端是最贴近用户的程序员，前端的能力就是能让产品从 90分进化到 100 分，甚至更好，
+
+ 参与项目，快速高质量完成实现效果图，精确到1px；
+
+ 与团队成员，UI设计，产品经理的沟通；
+
+ 做好的页面结构，页面重构和用户体验；
+
+ 处理hack，兼容、写出优美的代码格式；
+
+ 针对服务器的优化、拥抱最新前端技术。
+你在现在的团队处于什么样的角色，起到了什么明显的作用？你认为怎样才是全端工程师（Full Stack developer）？介绍一个你最得意的作品吧？你的优点是什么？缺点是什么？如何管理前端团队?最近在学什么？能谈谈你未来3，5年给自己的规划吗？
+你有哪些性能优化的方法？
+
+（看雅虎14条性能优化原则）。
+
+  （1） 减少http请求次数：CSSSprites, JS、CSS源码压缩、图片大小控制合适；网页Gzip，CDN托管，data缓存 ，图片服务器。
+
+  （2） 前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数
+
+  （3） 用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能。
+
+  （4） 当需要设置的样式很多时设置className而不是直接操作style。
+
+  （5） 少用全局变量、缓存DOM节点查找的结果。减少IO读取操作。
+
+  （6） 避免使用CSSExpression（css表达式)又称Dynamic properties(动态属性)。
+
+  （7） 图片预加载，将样式表放在顶部，将脚本放在底部  加上时间戳。
+http状态码有那些？分别代表是什么意思？
+
+100-199 用于指定客户端应相应的某些动作。 
+200-299 用于表示请求成功。 
+300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。 
+400-499 用于指出客户端的错误。400    1、语义有误，当前请求无法被服务器理解。401   当前请求需要用户验证 403  服务器已经理解请求，但是拒绝执行它。
+500-599 用于支持服务器错误。 503 – 服务不可用
+一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？
+
+ 查找浏览器缓存 
+    DNS解析、查找该域名对应的IP地址、重定向（301）、发出第二个GET请求
+    进行HTTP协议会话
+    客户端发送报头(请求报头)
+    服务器回馈报头(响应报头)
+    html文档开始下载
+    文档树建立，根据标记请求所需指定MIME类型的文件
+    文件显示
+    {
+    浏览器这边做的工作大致分为以下几步：
+
+&lt;pre&gt;`加载：根据请求的URL进行域名解析，向服务器发起请求，接收文件（HTML、&lt;span class=&quot;hljs-keyword&quot;&gt;JS&lt;/span&gt;、CSS、图象等）。
+
+解析：对加载到的资源（HTML、&lt;span class=&quot;hljs-keyword&quot;&gt;JS&lt;/span&gt;、CSS等）进行语法解析，建议相应的内部数据结构（比如HTML的DOM树，&lt;span class=&quot;hljs-keyword&quot;&gt;JS&lt;/span&gt;的（对象）属性表，CSS的样式规则等等）
+}
+`&lt;/pre&gt;
+
+平时如何管理你的项目？
+
+先期团队必须确定好全局样式（globe.css），编码模式(utf-8) 等；
+
+&lt;pre&gt;`    编写习惯必须一致（例如都是采用继承式的写法，单样式都写成一行）；
+
+    标注样式编写人，各模块都及时标注（标注关键样式调用的地方）；
+
+    页面进行标注（例如 页面 模块 开始和结束）；
+
+    CSS跟HTML 分文件夹并行存放，命名都得统一（例如style.css）；
+
+    JS 分文件夹存放 命名以该JS功能为准的英文翻译。
+
+    图片采用整合的 images&lt;span class=&quot;hljs-class&quot;&gt;.png&lt;/span&gt; png8 格式文件使用 尽量整合在一起使用方便将来的管理 
+`&lt;/pre&gt;
+
+说说最近最流行的一些东西吧？常去哪些网站？
+
+Node.js、Mongodb、npm、MVVM、MEAN、three.js,React 。
+网站：w3cfuns,sf,hacknews,CSDN,慕课，博客园，InfoQ,w3cplus等
+javascript对象的几种创建方式
+
+1，工厂模式
+2，构造函数模式
+3，原型模式
+4，混合构造函数和原型模式
+5，动态原型模式
+6，寄生构造函数模式
+7，稳妥构造函数模式
+javascript继承的6种方法
+
+1，原型链继承
+2，借用构造函数继承
+3，组合继承(原型+借用构造)
+4，原型式继承
+5，寄生式继承
+6，寄生组合式继承
+ajax过程
+
+(1)创建XMLHttpRequest对象,也就是创建一个异步调用对象.
+
+(2)创建一个新的HTTP请求,并指定该HTTP请求的方法、URL及验证信息.
+
+(3)设置响应HTTP请求状态变化的函数.
+
+(4)发送HTTP请求.
+
+(5)获取异步调用返回的数据.
+
+(6)使用JavaScript和DOM实现局部刷新.
+异步加载和延迟加载
+
+1.异步加载的方案： 动态插入script标签
+2.通过ajax去获取js代码，然后通过eval执行
+3.script标签上添加defer或者async属性
+4.创建并插入iframe，让它异步执行js
+5.延迟加载：有些 js 代码并不是页面初始化的时候就立刻需要的，而稍后的某些情况才需要的。
+前端安全问题？
+
+&lt;pre&gt;`（XSS，sql注入，CSRF）
+`&lt;/pre&gt;
+
+CSRF：是跨站请求伪造，很明显根据刚刚的解释，他的核心也就是请求伪造，通过伪造身份提交POST和GET请求来进行跨域的攻击。
+
+**完成CSRF需要两个步骤：**
+
+1.登陆受信任的网站A，在本地生成COOKIE
+
+2.在不登出A的情况下，或者本地COOKIE没有过期的情况下，访问危险网站B。
+ie各版本和chrome可以并行下载多少个资源
+
+IE6 两个并发，iE7升级之后的6个并发，之后版本也是6个
+
+Firefox，chrome也是6个
+javascript里面的继承怎么实现，如何避免原型链上面的对象共享
+
+用构造函数和原型链的混合模式去实现继承，避免对象共享可以参考经典的extend()函数，很多前端框架都有封装的，就是用一个空函数当做中间变量
+grunt， YUI compressor 和 google clojure用来进行代码压缩的用法。
+
+YUI Compressor 是一个用来压缩 JS 和 CSS 文件的工具，采用Java开发。
+
+使用方法：
+
+//压缩JS
+java -jar yuicompressor-2.4.2.jar --type js --charset utf-8-v src.js &gt; packed.js
+//压缩CSS
+java -jar yuicompressor-2.4.2.jar --type css --charset utf-8-v src.css &gt; packed.css
+Flash、Ajax各自的优缺点，在使用中如何取舍？
+
+1、Flash ajax对比
+Flash适合处理多媒体、矢量图形、访问机器；对CSS、处理文本上不足，不容易被搜索。
+Ajax对CSS、文本支持很好，支持搜索；多媒体、矢量图形、机器访问不足。
+共同点：与服务器的无刷新传递消息、用户离线和在线状态、操作DOM
+GET和POST的区别，何时使用POST？
+
+GET：一般用于信息获取，使用URL传递参数，对所发送信息的数量也有限制，一般在2000个字符
+    POST：一般用于修改服务器上的资源，对所发送的信息没有限制。
+
+&lt;pre&gt;`&lt;span class=&quot;hljs-keyword&quot;&gt;GET&lt;/span&gt;方式需要使用&lt;span class=&quot;hljs-built_in&quot;&gt;Request&lt;/span&gt;.QueryString来取得变量的值，而POST方式通过&lt;span class=&quot;hljs-built_in&quot;&gt;Request&lt;/span&gt;.Form来获取变量的值，
+也就是说&lt;span class=&quot;hljs-keyword&quot;&gt;Get&lt;/span&gt;是通过地址栏来传值，而Post是通过提交表单来传值。
+`&lt;/pre&gt;
+
+然而，在以下情况中，请使用 POST 请求：
+无法使用缓存文件（更新服务器上的文件或数据库）
+向服务器发送大量数据（POST 没有数据量限制）
+</code></pre>
       
       
         <div class="page-reward">
@@ -337,13 +578,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/07/22/my-first-blog/">github搭建博客优点</a></p>
+        <p><span>本文标题:</span><a href="/2016/08/05/前端分享续(2)/">前端学习分享</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 zjq-blog 的个人博客">zjq-blog</a></p>
-        <p><span>发布时间:</span>2016年07月22日 - 15时08分</p>
-        <p><span>最后更新:</span>2017年05月14日 - 18时02分</p>
+        <p><span>发布时间:</span>2016年08月05日 - 00时00分</p>
+        <p><span>最后更新:</span>2017年05月30日 - 09时47分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/07/22/my-first-blog/" title="github搭建博客优点">http://yoursite.com/2016/07/22/my-first-blog/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/07/22/my-first-blog/　　作者: zjq-blog" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/08/05/前端分享续(2)/" title="前端学习分享">http://yoursite.com/2016/08/05/前端分享续(2)/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2016/08/05/前端分享续(2)/　　作者: zjq-blog" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -356,18 +597,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2016/08/05/前端分享续(2)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          前端学习分享
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/07/12/前端分享(1)/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">前端学习分享</div>
+    <a href="/2016/07/22/my-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">github搭建博客优点</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -378,7 +610,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#前端学习分享续-2"><span class="toc-number">1.</span> <span class="toc-text">前端学习分享续(2)</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -426,7 +658,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/07/22/my-first-blog/" data-title="github搭建博客优点" data-url="http://yoursite.com/2016/07/22/my-first-blog/"></div>
+    <div class="ds-thread" data-thread-key="2016/08/05/前端分享续(2)/" data-title="前端学习分享" data-url="http://yoursite.com/2016/08/05/前端分享续(2)/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -449,13 +681,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/08/05/前端分享续(2)/" title="上一篇: 前端学习分享">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2016/07/12/前端分享(1)/" title="下一篇: 前端学习分享">
+            <a href="/2016/07/22/my-first-blog/" title="下一篇: github搭建博客优点">
                 <i class="fa fa-angle-right"></i>
             </a>
         
