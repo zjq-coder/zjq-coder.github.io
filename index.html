@@ -154,7 +154,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/ExecutorService/" style="font-size: 10px;">ExecutorService</a> <a href="/tags/Thread/" style="font-size: 10px;">Thread</a> <a href="/tags/奇淫技巧/" style="font-size: 10px;">奇淫技巧</a> <a href="/tags/黑魔法/" style="font-size: 10px;">黑魔法</a>
+                        <a href="/tags/ExecutorService/" style="font-size: 10px;">ExecutorService</a> <a href="/tags/Thread/" style="font-size: 20px;">Thread</a> <a href="/tags/volatile/" style="font-size: 10px;">volatile</a> <a href="/tags/奇淫技巧/" style="font-size: 10px;">奇淫技巧</a> <a href="/tags/黑魔法/" style="font-size: 10px;">黑魔法</a>
                     </div>
                 </section>
                 
@@ -238,6 +238,68 @@
     </div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-juc" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/07/25/juc/" class="article-date">
+      <time datetime="2017-07-25T07:08:32.000Z" itemprop="datePublished">2017-07-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/25/juc/">juc之java并发编程</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <script src="\assets\js\APlayer.min.js"> </script><h1 id="juc之java并发编程"><a href="#juc之java并发编程" class="headerlink" title="juc之java并发编程"></a>juc之java并发编程</h1><h2 id="内存可见性问题"><a href="#内存可见性问题" class="headerlink" title="内存可见性问题"></a>内存可见性问题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">public class TestVolatile &#123;</div><div class="line"></div><div class="line">    public static void main(String[] args)&#123;</div><div class="line">        ThreadDemo threadDemo=new ThreadDemo();</div><div class="line">        new Thread(threadDemo).start();</div><div class="line">        while (true)&#123;</div><div class="line">            if(threadDemo.getFlag())&#123;</div><div class="line">                System.out.println(Thread.currentThread().getName()+threadDemo.getFlag()+&quot;========&quot;);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line">class ThreadDemo implements Runnable&#123;</div><div class="line">    private Boolean flag=false;</div><div class="line"></div><div class="line">    public Boolean getFlag() &#123;</div><div class="line">        return flag;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void setFlag(Boolean flag) &#123;</div><div class="line">        this.flag = flag;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void run() &#123;</div><div class="line">        try &#123;</div><div class="line">            Thread.sleep(2000);</div><div class="line">            flag=true;</div><div class="line">        &#125; catch (InterruptedException e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">        if(flag)&#123;</div><div class="line">            System.out.println(Thread.currentThread().getName()+flag+&quot;======&quot;);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>==运行结果如下==</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/A9BC0422BC554ECB8F5AF10828302476?method=download&amp;shareKey=2c4e8c80fa816ad6cebb126e35dd99af" alt="image"></p>
+<p><strong>主线程中始终不会输出这就是内存可见性问题</strong><br><img src="https://note.youdao.com/yws/api/personal/file/4340C8465BF042D3A62E62B4C3352839?method=download&amp;shareKey=a8e4643f245348a119349385900d16dc" alt="image"></p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Thread/">Thread</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/volatile/">volatile</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-多线程poi导出" class="article article-type-post" itemscope itemprop="blogPost">
   
