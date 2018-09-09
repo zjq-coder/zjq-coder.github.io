@@ -6,7 +6,7 @@
   <title>juc之java并发编程 | zjq-blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="线程间内存可见性问题">
-<meta name="keywords" content="volatile,Thread">
+<meta name="keywords" content="volatile,Thread,Runable">
 <meta property="og:type" content="article">
 <meta property="og:title" content="juc之java并发编程">
 <meta property="og:url" content="http://yoursite.com/2017/07/28/juc/index.html">
@@ -14,7 +14,7 @@
 <meta property="og:description" content="线程间内存可见性问题">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/A9BC0422BC554ECB8F5AF10828302476?method=download&shareKey=2c4e8c80fa816ad6cebb126e35dd99af">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/4340C8465BF042D3A62E62B4C3352839?method=download&shareKey=a8e4643f245348a119349385900d16dc">
-<meta property="og:updated_time" content="2018-09-09T04:07:44.662Z">
+<meta property="og:updated_time" content="2018-09-09T04:13:22.092Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="juc之java并发编程">
 <meta name="twitter:description" content="线程间内存可见性问题">
@@ -156,7 +156,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/ExecutorService/" style="font-size: 10px;">ExecutorService</a> <a href="/tags/Thread/" style="font-size: 20px;">Thread</a> <a href="/tags/volatile/" style="font-size: 10px;">volatile</a> <a href="/tags/奇淫技巧/" style="font-size: 10px;">奇淫技巧</a> <a href="/tags/黑魔法/" style="font-size: 10px;">黑魔法</a>
+                        <a href="/tags/ExecutorService/" style="font-size: 10px;">ExecutorService</a> <a href="/tags/Runable/" style="font-size: 10px;">Runable</a> <a href="/tags/Thread/" style="font-size: 20px;">Thread</a> <a href="/tags/volatile/" style="font-size: 10px;">volatile</a> <a href="/tags/奇淫技巧/" style="font-size: 10px;">奇淫技巧</a> <a href="/tags/黑魔法/" style="font-size: 10px;">黑魔法</a>
                     </div>
                 </section>
                 
@@ -267,7 +267,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Thread/">Thread</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/volatile/">volatile</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Runable/">Runable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Thread/">Thread</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/volatile/">volatile</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -342,7 +342,7 @@
         <p><span>本文标题:</span><a href="/2017/07/28/juc/">juc之java并发编程</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 zjq-blog 的个人博客">zjq-blog</a></p>
         <p><span>发布时间:</span>2017年07月28日 - 15时08分</p>
-        <p><span>最后更新:</span>2018年09月09日 - 12时07分</p>
+        <p><span>最后更新:</span>2018年09月09日 - 12时13分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/07/28/juc/" title="juc之java并发编程">http://yoursite.com/2017/07/28/juc/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/07/28/juc/　　作者: zjq-blog" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
