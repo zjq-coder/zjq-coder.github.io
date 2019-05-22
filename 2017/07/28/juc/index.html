@@ -6,7 +6,7 @@
   <title>juc之java并发编程 | zjq-blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="线程间内存可见性问题">
-<meta name="keywords" content="Thread,volatile,Runable">
+<meta name="keywords" content="volatile,Thread,Runable">
 <meta property="og:type" content="article">
 <meta property="og:title" content="juc之java并发编程">
 <meta property="og:url" content="http://yoursite.com/2017/07/28/juc/index.html">
@@ -157,7 +157,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/ExecutorService/" style="font-size: 10px;">ExecutorService</a> <a href="/tags/Runable/" style="font-size: 10px;">Runable</a> <a href="/tags/Thread/" style="font-size: 20px;">Thread</a> <a href="/tags/volatile/" style="font-size: 10px;">volatile</a> <a href="/tags/奇淫技巧/" style="font-size: 10px;">奇淫技巧</a> <a href="/tags/黑魔法/" style="font-size: 10px;">黑魔法</a>
+                        <a href="/tags/ExecutorService/" style="font-size: 10px;">ExecutorService</a> <a href="/tags/Runable/" style="font-size: 10px;">Runable</a> <a href="/tags/Thread/" style="font-size: 20px;">Thread</a> <a href="/tags/synchronized/" style="font-size: 10px;">synchronized</a> <a href="/tags/volatile/" style="font-size: 15px;">volatile</a> <a href="/tags/奇淫技巧/" style="font-size: 10px;">奇淫技巧</a> <a href="/tags/黑魔法/" style="font-size: 10px;">黑魔法</a>
                     </div>
                 </section>
                 
@@ -181,7 +181,7 @@
                 
             </div>
 			<div style="position:absolute;bottom:120px;top:70%;left:2px;width:76%;">
-				<iframe border="0" marginwidth="0" marginheight="0" src="//music.163.com/outchain/player?type=2&amp;id=469744679&amp;auto=1&amp;height=66" width="300" height="86" frameborder="no"></iframe>
+				<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=417859631&auto=1&height=66"></iframe>
 			</div>
         </div>
 		
@@ -360,6 +360,15 @@
 
 <nav id="article-nav">
   
+    <a href="/2017/07/28/volatile&synchronized/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          volatile之内存可见性分析
+        
+      </div>
+    </a>
+  
   
     <a href="/2017/07/22/多线程poi导出/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">多线程poi导出demo</div>
@@ -444,7 +453,9 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/07/28/volatile&synchronized/" title="上一篇: volatile之内存可见性分析">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
@@ -453,7 +464,7 @@
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/28/juc/">juc之java并发编程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/22/多线程poi导出/">多线程poi导出demo</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/my-first-blog/">github搭建博客优点</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/07/28/volatile&synchronized/">volatile之内存可见性分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/28/juc/">juc之java并发编程</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/07/22/多线程poi导出/">多线程poi导出demo</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/07/22/my-first-blog/">github搭建博客优点</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
@@ -483,7 +494,7 @@
     <div class="outer">
         <div id="footer-info">
             <div class="footer-left">
-                &copy; 2018 zjq-blog
+                &copy; 2019 zjq-blog
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
